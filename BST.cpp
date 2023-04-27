@@ -49,11 +49,11 @@ else if (key > root->key) {
         // node with only one child or no child
         if (root->left == NULL) {
             struct node *sample = root->right;
-           // free(root);
+        
             return sample;
         } else if (root->right == NULL) {
             struct node *sample = root->left;
-            //free(root);
+           
             return sample;
         }
         struct node *sample = root->right;
