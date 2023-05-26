@@ -76,6 +76,7 @@ public:
 };
 
 int main() {
+    auto start = high_resolution_clock::now(); // Start time
     int size;
     cout << "Enter the size of the stack: ";
     cin >> size;
@@ -99,8 +100,8 @@ s.Push(30);
 s.Push(3);
 s.Push(1);
 s.Display();
-auto start = high_resolution_clock::now(); // Start time
-// Code snippet
+
+
 auto stop = high_resolution_clock::now(); // Stop time
 auto duration = duration_cast<nanoseconds>(stop - start); // Duration
 cout << "\nTime taken by function : "<< duration.count() << " nanoseconds";
